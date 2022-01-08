@@ -4,54 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mood Beats</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="stars.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!------------------------------LOADING SCREEN---------------------------------------------->
-    <div id='preloader'>
-        <img src="/resources/google-fit.gif" alt="google-fit" >
-        <img src="/resources/zzzsleep.gif" alt="zzzsleep">
-    </div>
-    <!------------------------------LOADING SCREEN---------------------------------------------->
     
-
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
 
     <!------------------------------HOME SCREEN------------------------------------------------->
     <section id='homeScreen'>
+        <img src="resources/mainIcon.png" alt="">
         <article class='containerA'>
-            <img src="/resources/A1.png" alt="">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel optio numquam quae asperiores quibusdam maiores excepturi tempore dolor qui aperiam?</h4>
-        </article>
-
-        <article class='containerA'>
-            <img src="/resources/A1.png" alt="">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel optio numquam quae asperiores quibusdam maiores excepturi tempore dolor qui aperiam?</h4>
-        </article>
-
-        <article class='containerA'>
-            <img src="/resources/A1.png" alt="">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel optio numquam quae asperiores quibusdam maiores excepturi tempore dolor qui aperiam?</h4>
+            <h2>Mood Beats</h2>
+            <h4>Sign in with google get started</h4>
+            <a href="#content"> 
+            <span>Get started</span>
+            </a>
         </article>
     </section>
 
 
-    <a href="stats.html">Know Your stats &#8594;</a>
 
 
     <!------------------------------HOME SCREEN------------------------------------------------->
 
 
+
+    <section id="content">
+        <article class="containerB">
+            <img src="resources/orange-rocket.png" alt="">
+            <textarea name="note" id="note" cols="80" rows="10"></textarea>
+            <img src="resources/blue rocket.png" alt="">
+        </article>
+    </section>
+
+
     <!------------------------------JAVASCRIPT---------------------------------------------->
-    <script>
-        let loadingScreen = document.getElementById('preloader');
-        window.addEventListener('load' , function(){
-            loadingScreen.style.display = 'none';
-        })
-    </script>
+  
     <!------------------------------JAVASCRIPT---------------------------------------------->
 
 
