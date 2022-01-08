@@ -1,0 +1,142 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Reset CSS*/
+
+
+
+/*-------------------LOADING SCREEN-------------------------------------*/
+#preloader
+{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+#preloader img[alt="google-fit"]
+{
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    z-index: 1;
+}
+#preloader img[alt="zzzsleep"]
+{
+    width: 13% ;
+    height: 20%;
+    position: absolute;
+    left: 52%;
+    top: 18%;
+    z-index: 2;
+}
+/*-------------------LOADING SCREEN-------------------------------------*/
+
+/*-------------------HOME SCREEN-------------------------------------*/
+
+body
+{
+    background: linear-gradient(rgba(119, 65, 234, 1) , rgb(60, 107, 146) ) no-repeat fixed;
+}
+#homeScreen
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-size: 90%;
+}
+
+#homeScreen .containerA
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 50%;
+    border: 1px solid purple;
+    position: relative;
+    bottom: 5%;
+}
+
+#homeScreen .containerA img
+{
+    width: 40%;
+    height: 40%;
+    align-self: center;
+}
+
+#homeScreen .containerA h2
+{
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+}
+
+#homeScreen .containerA h4
+{
+    text-align: center;
+}
+
+a[href="stats.html"]
+{
+    overflow: hidden;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/*-------------------HOME SCREEN-------------------------------------*/
