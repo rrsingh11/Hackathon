@@ -83,7 +83,8 @@ table {
 
 body
 {
-    background: linear-gradient(rgba(119, 65, 234, 1) , rgb(60, 107, 146) ) no-repeat fixed;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
 #homeScreen
 {
