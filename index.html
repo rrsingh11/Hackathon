@@ -25,10 +25,18 @@
         <img src="resources/mainIcon.png" alt="">
         <article class='containerA'>
             <h2>Mood Beats</h2>
-            <h4>Click on this button to get playlists according to your mood</h4>
-            <a href="#content"> 
+            <h4>Enter your phone number and get playlist according to your mood.</h4>
+            <form action="" method="GET" id="phone"> <!---->
+                <p>
+                    <label for="phoneNo">Phone no.</label>
+                    <input type="text" name="phone" id="phoneNo" placeholder="XXXXXXXXXX" required pattern="[1-9]{1}[0-9]{9}">
+                    </p>
+            </form>
+
+            <button  form="phone" onclick="#content"> 
             <span>Get started</span>
-            </a>
+            </button>
+            
         </article>
     </section>
 
@@ -46,14 +54,14 @@
         <article class="containerB">
             <img src="resources/orange-rocket.png" alt="">
             <form id="form" action="https://www.google.com" method="post">
-              <textarea name="q" id="mytextarea" cols="80" rows="8" placeholder="Tell me, I'm very good in keeping secrets..."></textarea>
+                <textarea name="q" id="mytextarea" cols="80" rows="8" placeholder="Tell me, I'm very good in keeping secrets..." required></textarea>
             </form>
             <img src="resources/blue rocket.png" alt="">
         </article>
             <button class="submit" form="form">
                 Get Your Playlist</button></a>
     </section>
-    
+
   <script src="app.js"></script>
 </body>
 </html>
