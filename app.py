@@ -1,6 +1,11 @@
-from flask import Flask, request, jsonify, render_template, url_for, redirect
+from flask import Flask, request, render_template, url_for, redirect
 import requests
+import pickle
 from twilio.rest import Client
+
+filename = 'model.pkl'
+clf = pickle.load(open(filename, 'rb'))
+cv = pickle.load(open("transform.pkl", "rb"))
 app = Flask(__name__)
 
 @app.route('/', methods=["POST", "GET"])
@@ -10,7 +15,10 @@ def home():
         phoneno = "+918460830860"
 
         #ml code here
-        var = 0
+        data = [text]
+        vect = cv.transform(data).toarray()
+        my_prediction = clf.predict(vect)
+        var = my_prediction[0]
         
         if var == 0:
             var = "happy"
@@ -37,8 +45,7 @@ def home():
 
         #twilio code here
         account_sid = "AC208602ce83ba2f9fb6725044be1ed619"
-        auth_token = "38632370714ed18329d5071a2006bc08"
-
+        auth_token = "6e4eb7ff600a7688b19f92cefb05233a"
         client = Client(account_sid, auth_token)
 
         client.messages.create(
