@@ -152,8 +152,13 @@ a img
     width: 100vw;
 }
 
+#content #form
+{
+    display: inline-block;
+}
 #content .containerB textarea
 {
+
     background-color: rgba(17, 17, 17, 0.61);
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -182,12 +187,12 @@ a img
     color: rgb(71, 71, 71);
 }
 
-#content a .submit 
+#content  .submit 
 {
     display: block;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: black;
     height: 6%;
     width: 18%;
@@ -196,15 +201,11 @@ a img
     border-radius: 29px;
     background-color: royalblue;
     text-decoration: "none";
-    padding-top: 1%;
     text-decoration:none;
-}
-#content a
-{
-    text-decoration: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.08);
 }
 
-#content a .submit:hover
+#content  .submit:hover
 {
     background-color: rgb(214, 210, 203);
 }
