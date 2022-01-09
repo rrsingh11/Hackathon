@@ -49,11 +49,16 @@ table {
 
 
 /*-------------------HOME SCREEN-------------------------------------*/
-
+a img
+{
+    height: 10vh;
+    text-align: right;
+    margin-left: 94%;
+}
 #homeScreen
 {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -130,24 +135,29 @@ table {
 }
 
 /*-------------------HOME SCREEN-------------------------------------*/
-/*-------------------HOME SCREEN-------------------------------------*/
+/*---------------------CONTENT-------------------------------------*/
+
 
 #content
 {
     width: 100vw;
     height: 100vh;
-    border: 1px solid red;
     position: relative;
+    text-align: center;
 }
 
 #content .containerB
 {
     text-align: center ;
+    width: 100vw;
 }
 
 #content .containerB textarea
 {
-    background-color: rgb(90, 90, 161);
+    background-color: rgba(17, 17, 17, 0.61);
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(151, 151, 151);
 }
 
 #content .containerB img
@@ -155,4 +165,47 @@ table {
     width: 10%;
     height: 40%;
 }
-/*-------------------HOME SCREEN-------------------------------------*/
+
+#content p
+{
+    font-size: 3em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 8%;
+    cursor: text;
+}
+
+#content .containerB textarea::placeholder
+{
+    color: rgb(71, 71, 71);
+}
+
+#content a .submit 
+{
+    display: block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: black;
+    height: 6%;
+    width: 18%;
+    margin-top: 3%;
+    margin-left: 43%;
+    border-radius: 29px;
+    background-color: royalblue;
+    text-decoration: "none";
+    padding-top: 1%;
+    text-decoration:none;
+}
+#content a
+{
+    text-decoration: none;
+}
+
+#content a .submit:hover
+{
+    background-color: rgb(214, 210, 203);
+}
+/*---------------------CONTENT-------------------------------------*/
